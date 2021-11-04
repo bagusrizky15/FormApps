@@ -21,8 +21,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="Nama Lengkap"
         android:inputType="textPersonName"
-        android:hint="Nama Lengkap"/>
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/idInputEmail"
@@ -30,7 +31,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Alamat Email"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/idInputPhone"
@@ -38,7 +40,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Nomor HP"
-        android:inputType="phone" />
+        android:inputType="phone"
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/idInputPassword"
@@ -46,7 +49,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
 
     <Button
         android:id="@+id/idInputButton"

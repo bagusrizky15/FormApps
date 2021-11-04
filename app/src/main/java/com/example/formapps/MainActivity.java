@@ -2,6 +2,7 @@ package com.example.formapps;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -21,16 +22,9 @@ public class MainActivity extends AppCompatActivity {
         EditText inputPassword = (EditText) findViewById(R.id.idInputPassword);
 
         Button btnSave = (Button) findViewById(R.id.idInputButton);
-        btnSave.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //kode untuk aksi dari klik button
-
-                Log.d("--Nama--", inputName.getText().toString());
-                Log.d("--Email--", inputEmail.getText().toString());
-                Log.d("--Phone--", inputPhone.getText().toString());
-                Log.d("--Password--", inputPassword.getText().toString());
-            }
+        btnSave.setOnClickListener(v ->{
+          Intent loginIntent = new Intent(MainActivity.this, Dashboard_Activity.class);
+          startActivity(loginIntent);
         });
 
     }
